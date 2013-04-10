@@ -47,12 +47,11 @@ This package contains the static version of liblua for %{name}.
 %prep
 %setup -q
 %patch0 -p1 -E -z .autoxxx
-%patch1 -p0 -z .lunatic
+mv src/luaconf.h src/luaconf.h.in
+%patch1 -p1 -z .lunatic
 %patch2 -p1 -z .idsize
-%patch3 -p0 -d src -z .bugfix2
-# fix perms on auto files
-chmod u+x autogen.sh config.guess config.sub configure depcomp install-sh missing
-
+%patch3 -p1 -z .bugfix2
+autoreconf -i
 
 %build
 %configure --with-readline
