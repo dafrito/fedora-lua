@@ -11,7 +11,7 @@ Patch1:         lua-5.1.4-lunatic.patch
 Patch2:         lua-5.1.4-idsize.patch
 Patch3:         lua-5.1.4-2.patch
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
-BuildRequires:  readline-devel ncurses-devel
+BuildRequires:  automake autoconf libtool readline-devel ncurses-devel
 Provides:       lua = 5.1
 Provides:       lua(abi) = 5.1
 
