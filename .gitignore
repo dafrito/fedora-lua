@@ -1,5 +1,4 @@
-lua-5.1.4.tar.gz
-lua-5.1.4/
+lua-5.2.2.tar.gz
 .build*
 *.src.rpm
 /x86_64/
