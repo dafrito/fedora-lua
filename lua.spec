@@ -12,7 +12,6 @@ Patch0:         %{name}-%{version}-autotoolize.patch
 Patch1:         %{name}-%{version}-idsize.patch
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 BuildRequires:  automake autoconf libtool readline-devel ncurses-devel
-Provides:       lua = %{major_version}
 Provides:       lua(abi) = %{major_version}
 
 %description
