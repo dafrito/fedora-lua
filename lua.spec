@@ -1,4 +1,4 @@
-%define major_version 5.2
+%global major_version 5.2
 
 Name:           lua
 Version:        5.2.2
